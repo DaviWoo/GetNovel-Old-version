@@ -36,6 +36,7 @@ merger.write(f"{name}.pdf")
 archive = listdir('C:/Users/DaviT/PycharmProjects/testPROJECT')
 for arq in archive:
     if '.pdf' in arq:
-        rename(f'C:/Users/DaviT/PycharmProjects/testPROJECT/{arq}', f'{path}/{arq}')
+        rename(f'C:/Users/DaviT/PycharmProjects/testPROJECT/{arq}', f'{path}/{arq}') # Este caminho é a pasta onde está o programa em python.
+        # O PDF mesclado normalmente aparece na mesma pasta do programa python, esse código é opcional e move ele para a mesma pasta onde os arquivos foram baixados.
 
 print(colored('PDFs mesclados com SUCESSO!', 'green'))
